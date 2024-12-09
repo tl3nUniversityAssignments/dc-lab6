@@ -83,12 +83,12 @@ void ProcessInitialization(double* &pMatrix, int &Size, double &Eps) {
 void test() {
     double* pMatrix; // Matrix of the grid nodes
     int Size = 0; // Matrix size
-    int sizes[] = {10, 100, 1000, 2000, 3000, 4000}; 
+    int sizes[] = {10, 100, 1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000}; 
     double Eps; // Required accuracy
     int Iterations; // Iteration number
     double start, finish, duration;
 
-    for (int i = 0; i < 6; ++i) {
+    for (int i = 0; i < 12; ++i) {
         Size = sizes[i];
         Eps = 0.0001;
         pMatrix = new double[Size * Size];
